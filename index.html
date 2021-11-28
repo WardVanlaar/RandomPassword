@@ -20,17 +20,52 @@
           <div class="card-body">
             <textarea
               readonly
-              id="password"
+              id="passwordBox"
               placeholder="Your Secure Password"
               aria-label="Generated Password"
             ></textarea>
           </div>
           <div class="card-footer">
-            <button id="generate" class="btn">Generate Password</button>
+            <!--code from Xenophobic Xenomorph on Aug 13 2020 on codegrepper.com-->
+            <button id="generate" class="btn" onclick="showDiv()">Generate Password</button>
+            <div id="checkbox" class="form" style="display: none;">
+              <form>
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="Length">
+                        <label><input type="number" id="length" min="8" max="128" value="8">Length (choose between 8-128 characthers)</label>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="checkbox">
+                      <label><input type="checkbox" id="upperCace" checked>Upper case</label>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="checkbox">
+                      <label><input type="checkbox" id="lowerCase" checked>Lower case</label>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="checkbox">
+                      <label><input type="checkbox" id="number" checked>Number</label>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="checkbox">
+                      <label><input type="checkbox" id="symbol" checked>Symbol</label>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <button type="submit" class="btn" onclick="createPassword()">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div> 
           </div>
         </div>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
