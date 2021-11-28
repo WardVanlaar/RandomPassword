@@ -1,11 +1,11 @@
 // Assignment code here
 
-//code from Xenophobic Xenomorph on Aug 13 2020 on codegrepper.com
-function showDiv() {
-  document.getElementById('checkbox').style.display = "block";
-}
-
-  // Get references to the #generate element
+  //code from Xenophobic Xenomorph on Aug 13 2020 on codegrepper.com
+  function showDiv() {
+    document.getElementById('checkbox').style.display = "block";
+  }
+  
+// Get references to the #generate element
 
   /*code from https://www.tutorialstonight.com/password-generator-in-javascript.php*/
   const keys = {
@@ -14,6 +14,9 @@ function showDiv() {
     number: "0123456789",
     symbol: "!@#$%^&*()_+~\`|}{[]:;?><,./-="
   }
+
+  console.log(keys);
+
   const getKey = [
     function upperCase() {
       return keys.upperCase[Math.floor(Math.random() * keys.upperCase.length)];
@@ -29,13 +32,20 @@ function showDiv() {
     }
   ];
 
-  // Write password to the #password input
+  console.log(getKey);
+
+// Write password to the #password input
 
   function createPassword() {
     const upper = document.getElementById("upperCase").checked;
+    console.log(upper);
     const lower = document.getElementById("lowerCase").checked;
+    console.log(lower);
     const number = document.getElementById("number").checked;
+    console.log(number);
     const symbol = document.getElementById("symbol").checked;
+    console.log(symbol);
+  
     if (upper + lower + number + symbol === 0) {
       alert("Please check atleast one box!");
       return;
@@ -50,14 +60,15 @@ function showDiv() {
         password += keyToAdd();
       }
     }
-    passwordBox.innerHTML = password;
+    console.log(password);
+    // Add event listener to generate button
+    debugger;
+    document.getElementById("generateBtn").addEventListener("click", function(){
+    document.getElementById("passwordBox").innerText = "'password.value'";
+  });
   }
 
 
 
 
 
-// Add event listener to generate button
-
-//generateBtn.addEventListener("click", writePassword);
-//*/
