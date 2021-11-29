@@ -17,7 +17,7 @@ This is what it should look like:
 
 
 ## Contribution
-Made with by Ward Vanlaar using code from:
+Made by Ward Vanlaar using code from:
 
 Xenophobic Xenomorph on Aug 13 2020 on codegrepper.com and from:
 https://www.tutorialstonight.com/password-generator-in-javascript.php.
