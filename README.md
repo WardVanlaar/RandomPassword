@@ -11,7 +11,9 @@ This application generates a random password.
 ## Website
 You can download the source code here: https://github.com/WardVanlaar/RandomPassword/.
 Or you can launch the application here: https://wardvanlaar.github.io/RandomPassword/.
-![image](https://user-images.githubusercontent.com/91222837/143944904-29775586-989c-45c0-a493-446771428301.png)
+
+![Picture1](https://user-images.githubusercontent.com/91222837/143947880-244f4bc7-4930-4c6a-a043-f9fa238d511c.png)
+
 
 ## Contribution
 Made with by Ward Vanlaar using code from:
