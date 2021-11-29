@@ -2,7 +2,6 @@
 
   //code from Xenophobic Xenomorph on Aug 13 2020 on codegrepper.com
   function showDiv() {
-
     document.getElementById('checkbox').style.display = "block";
   }
     
@@ -66,7 +65,6 @@
       }
     }
     console.log(password);
-    debugger;
     passwordBox.innerHTML = password;
   }
 
