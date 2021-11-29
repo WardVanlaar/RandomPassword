@@ -2,12 +2,13 @@
 
   //code from Xenophobic Xenomorph on Aug 13 2020 on codegrepper.com
   function showDiv() {
+
     document.getElementById('checkbox').style.display = "block";
   }
-  
+    
 // Get references to the #generate element
 
-  /*code from https://www.tutorialstonight.com/password-generator-in-javascript.php*/
+  //code from https://www.tutorialstonight.com/password-generator-in-javascript.php
   const keys = {
     upperCase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
     lowerCase: "abcdefghijklmnopqrstuvwxyz",
@@ -61,14 +62,8 @@
       }
     }
     console.log(password);
-    // Add event listener to generate button
-    debugger;
-    document.getElementById("generateBtn").addEventListener("click", function(){
-    document.getElementById("passwordBox").innerText = "'password.value'";
-  });
+    passwordBox.innerHTML = password;
+    debugger
   }
 
-
-
-
-
+// Add event listener to generate button
