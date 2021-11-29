@@ -1,6 +1,5 @@
 *,
-*::before,
-*::after {
+*::before, ::after {
   box-sizing: border-box;
 }
 
@@ -20,16 +19,26 @@ body {
   background-color: rgb(57, 97, 122, 10%);
   border-radius: 5px;
   padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+h2 {
+  text-align: center;
 }
 
 .wrapper {
   border: 2px solid hsl(360, 91%, 36%);
   border-radius: 12px;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  margin: 150px 250px;
+  padding: 20px;
+  margin: 100px 350px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 header {
@@ -45,10 +54,16 @@ header {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
   color: hsl(206, 17%, 28%);
   font-size: 18px;
-  margin: 0 auto;
+  margin: 0 15px;
   max-width: 800px;
   padding: 30px;
   margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
 }
 
 .card-header::after {
@@ -61,10 +76,12 @@ header {
 
 .card-body {
   min-height: 100px;
+  display: block;
 }
 
 .card-footer {
   text-align: center;
+  display: block;
 }
 
 .card-footer::before {
@@ -130,6 +147,15 @@ button {
 
 
 @media (max-width: 690px) {
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 50px 100px;
+  }
+  
   .btn {
     font-size: 1rem;
     margin: 16px 0px 0px 0px;
@@ -142,6 +168,23 @@ button {
 }
 
 @media (max-width: 500px) {
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 25px 50px;
+  }
+  
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
   .btn {
     font-size: 0.8rem;
   }
