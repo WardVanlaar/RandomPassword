@@ -36,8 +36,12 @@
   console.log(getKey);
 
 // Write password to the #password input
+// Add event listener to generate button
 
-  function createPassword() {
+  document.getElementById('generateBtn').addEventListener("click", createPassword);
+
+  function createPassword(e) {
+    e.preventDefault();
     const upper = document.getElementById("upperCase").checked;
     console.log(upper);
     const lower = document.getElementById("lowerCase").checked;
@@ -62,8 +66,8 @@
       }
     }
     console.log(password);
+    debugger;
     passwordBox.innerHTML = password;
-    debugger
   }
 
-// Add event listener to generate button
+
