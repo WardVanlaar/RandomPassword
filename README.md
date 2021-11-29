@@ -20,7 +20,7 @@ This is what it should look like:
 Made by Ward Vanlaar using code from:
 
 Xenophobic Xenomorph on Aug 13 2020 on codegrepper.com and from:
-https://www.tutorialstonight.com/password-generator-in-javascript.php.
+https://www.tutorialstonight.com/password-generator-in-javascript.php
 
 Shout-out to AskBCS Learning Assistant for help with addEventListener.
 
