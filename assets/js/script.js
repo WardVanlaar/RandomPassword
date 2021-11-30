@@ -36,11 +36,18 @@
 
 // Write password to the #password input
 // Add event listener to generate button
-
+  
   document.getElementById('generateBtn').addEventListener("click", createPassword);
 
-  function createPassword(e) {
-    e.preventDefault();
+  function createPassword(event) {
+    event.preventDefault();
+
+    const MinMax = document.getElementById("length").value;
+    console.log(MinMax);
+    if (MinMax<8 || MinMax>128) {
+      alert("You must select a value between 8 and 128!");
+    }
+
     const upper = document.getElementById("upperCase").checked;
     console.log(upper);
     const lower = document.getElementById("lowerCase").checked;
@@ -49,7 +56,7 @@
     console.log(number);
     const symbol = document.getElementById("symbol").checked;
     console.log(symbol);
-  
+
     if (upper + lower + number + symbol === 0) {
       alert("Please check atleast one box!");
       return;
