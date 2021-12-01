@@ -1,6 +1,6 @@
 // Assignment code here
   
-  var formEl = document.querySelector("#submission-form");
+  //var formEl = document.querySelector("#submission-form");
 
   //code from Xenophobic Xenomorph on Aug 13 2020 on codegrepper.com
   function showDiv() {
@@ -49,10 +49,7 @@
     if (MinMax<8 || MinMax>128) {
       alert("You must select a value between 8 and 128!");
       return;
-      formEl.reset();
     }
-
-    
 
     const upper = document.getElementById("upperCase").checked;
     console.log(upper);
